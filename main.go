@@ -64,7 +64,7 @@ func (m *montgomery) mul_(a, b *big.Int) *big.Int {
 	return m.mr_(cc)
 }
 
-// mr is montgomery reduction
+// mr do montgomery reduction
 func (m *montgomery) mr(t *big.Int) *big.Int {
 	tmp := new(big.Int)
 	tmp = tmp.
@@ -79,7 +79,7 @@ func (m *montgomery) mr(t *big.Int) *big.Int {
 	return tmp
 }
 
-// mr is montgomery reduction
+// mr do montgomery reduction
 func (m *montgomery) mr_(t *big.Int) *big.Int {
 	tmp := new(big.Int)
 	tmp = tmp.
